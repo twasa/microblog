@@ -41,7 +41,6 @@ jobs:
       - run:
           name: run tests
           command: |
-            . venv/bin/activate
             python run.py &
             docker --version
       - store_artifacts:
