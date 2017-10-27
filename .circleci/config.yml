@@ -43,7 +43,7 @@ jobs:
           name: run tests
           command: |
             python run.py &
-            docker --version
+            curl http://localhost:5000
       - store_artifacts:
           path: test-reports
           destination: test-reports
