@@ -31,7 +31,7 @@ jobs:
           name: install dependencies
           command: |
             pip install --upgrade setuptools
-            pip install -r requirements.txt
+            # pip install -r requirements.txt
 
       - save_cache:
           paths:
@@ -43,7 +43,7 @@ jobs:
           name: run tests
           command: |
             python run.py &
-            curl http://localhost:5000
+            #curl http://localhost:5000
       - store_artifacts:
           path: test-reports
           destination: test-reports
